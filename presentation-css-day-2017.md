@@ -23,7 +23,7 @@ by Carla Soloperto
 
 :::slide
 ## Tools
-- colornamer (assigna meaningful name to color hex codes)
+- colornamer (assign a meaningful name to color hex codes)
 :::
 ::::
 
@@ -45,8 +45,7 @@ by Mattia Tommasone
 :::
 
 :::slide
-## Code Smells #1
-### Undoing
+## Code Smells #1 / Undoing
 
 DON'T
 ````
@@ -56,13 +55,13 @@ h2 {
    padding-bottom: 0.5em;
    border-bottom: 1px solid #ccc;
 }
-
 .no-border {
    padding-bottom: 0;
    border-bottom: none;
 }
 ````
-
+:::
+:::slide
 DO
 ````
 h2 {
@@ -78,8 +77,7 @@ h2 {
 :::
 
 :::slide
-## Code Smells #2
-### Magic numbers
+## Code Smells #2 / Magic numbers
 ````
 height: 37px;
 line-height: 1.2em;
@@ -89,8 +87,7 @@ border-top: .1875em solid purple;
 :::
 
 :::slide
-## Code Smells #3
-### Too much/too less specificity in selectors
+## Code Smells #3 / Too much/too less specificity in selectors
 ````
 ul.nav li.active a {}
 .content ul.features a.button {}
@@ -101,8 +98,7 @@ h2 {}
 :::
 
 :::slide
-## Code Smells #4
-### ID
+## Code Smells #4 / ID
 - unique per page
 - overrides any combination of classes
 - no need to use them
@@ -138,14 +134,15 @@ Images (66% of average page weight)
 :::
 
 :::slide
-- Clean code
-- HTTP2
-- Mobile first
+## Percived vs real performance
+ ![](C:\Users\bedussif\Downloads\visual-progress1.png) 
 :::
 
 :::slide
-## Percived vs real performance
 - Critical css
+- Clean code
+- HTTP2
+- Mobile first
 :::
 
 :::slide
@@ -186,7 +183,7 @@ by Davide di Pumpo
 
 :::slide
 ## Testing CSS
-- unit test: es. `expext(el.css('display')).to.be('block')`
+- unit test: es. `expect(el.css('display')).to.be('block')`
 - [True](https://github.com/oddbird/true), unit test for Sass
 - Regression test
 :::
@@ -224,7 +221,7 @@ by Lorena Ramonda
 ## Compatibility
 1. Table > ALL
 2. Div floated > ALL
-3 Div display: table > NO IE 6 & 7
+3. Div display: table > NO IE 6 & 7
 4. Flexbox > NO IE 6-9
 5. CSS Columns > NO IE 6-9
 6. CSS Grid > NO safari < 10.3 & Android Browser
@@ -255,4 +252,11 @@ by Carmine Alfano
 - Sass sources
 - Modularity
 :::
+::::
+
+::::slide
+# that's all folks
+Francesco Bedussi
+
+francesco.bedussi@ynap.com
 ::::

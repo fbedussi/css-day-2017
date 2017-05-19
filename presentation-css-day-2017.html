@@ -67,7 +67,7 @@
 <section >
 <h2>Tools</h2>
 <ul>
-<li>colornamer (assigna meaningful name to color hex codes)</li>
+<li>colornamer (assign a meaningful name to color hex codes)</li>
 </ul>
 </section>
 </section>
@@ -88,8 +88,7 @@
 </ul>
 </section>
 <section >
-<h2>Code Smells #1</h2>
-<h3>Undoing</h3>
+<h2>Code Smells #1 / Undoing</h2>
 <p>DON'T</p>
 <pre><code>h2 {
    font-size: 2em;
@@ -97,12 +96,13 @@
    padding-bottom: 0.5em;
    border-bottom: 1px solid #ccc;
 }
-
 .no-border {
    padding-bottom: 0;
    border-bottom: none;
 }
 </code></pre>
+</section>
+<section >
 <p>DO</p>
 <pre><code>h2 {
    font-size: 2em;
@@ -116,8 +116,7 @@
 </code></pre>
 </section>
 <section >
-<h2>Code Smells #2</h2>
-<h3>Magic numbers</h3>
+<h2>Code Smells #2 / Magic numbers</h2>
 <pre><code>height: 37px;
 line-height: 1.2em;
 width: .7345rem;
@@ -125,8 +124,7 @@ border-top: .1875em solid purple;
 </code></pre>
 </section>
 <section >
-<h2>Code Smells #3</h2>
-<h3>Too much/too less specificity in selectors</h3>
+<h2>Code Smells #3 / Too much/too less specificity in selectors</h2>
 <pre><code>ul.nav li.active a {}
 .content ul.features a.button {}
 
@@ -135,8 +133,7 @@ h2 {}
 </code></pre>
 </section>
 <section >
-<h2>Code Smells #4</h2>
-<h3>ID</h3>
+<h2>Code Smells #4 / ID</h2>
 <ul>
 <li>unique per page</li>
 <li>overrides any combination of classes</li>
@@ -174,16 +171,15 @@ h2 {}
 </ul>
 </section>
 <section >
+<h2>Percived vs real performance</h2>
+<p><img src="C:/Users/bedussif/Downloads/visual-progress1.png" alt=""></p>
+</section>
+<section >
 <ul>
+<li>Critical css</li>
 <li>Clean code</li>
 <li>HTTP2</li>
 <li>Mobile first</li>
-</ul>
-</section>
-<section >
-<h2>Percived vs real performance</h2>
-<ul>
-<li>Critical css</li>
 </ul>
 </section>
 <section >
@@ -222,7 +218,7 @@ h2 {}
 <section >
 <h2>Testing CSS</h2>
 <ul>
-<li>unit test: es. <code>expext(el.css('display')).to.be('block')</code></li>
+<li>unit test: es. <code>expect(el.css('display')).to.be('block')</code></li>
 <li><a href="https://github.com/oddbird/true">True</a>, unit test for Sass</li>
 <li>Regression test</li>
 </ul>
@@ -260,8 +256,8 @@ h2 {}
 <h2>Compatibility</h2>
 <ol>
 <li>Table &gt; ALL</li>
-<li>Div floated &gt; ALL
-3 Div display: table &gt; NO IE 6 &amp; 7</li>
+<li>Div floated &gt; ALL</li>
+<li>Div display: table &gt; NO IE 6 &amp; 7</li>
 <li>Flexbox &gt; NO IE 6-9</li>
 <li>CSS Columns &gt; NO IE 6-9</li>
 <li>CSS Grid &gt; NO safari &lt; 10.3 &amp; Android Browser</li>
@@ -291,6 +287,11 @@ h2 {}
 </ul>
 </section>
 </section>
+<section >
+<h1>that's all folks</h1>
+<p>Francesco Bedussi</p>
+<p>francesco.bedussi@ynap.com</p>
+</section>
 
 
 			</div>
@@ -304,7 +305,7 @@ h2 {}
 
 			// More info https://github.com/hakimel/reveal.js#configuration
 			{
-				let configuration = {"controls":true,"progress":true,"slideNumber":false,"history":false,"keyboard":true,"overview":true,"center":true,"touch":true,"loop":false,"rtl":false,"shuffle":false,"fragments":true,"embedded":false,"help":true,"showNotes":false,"autoSlideStoppable":true,"mouseWheel":false,"hideAddressBar":true,"previewLinks":false,"transition":"convex","transitionSpeed":"default","backgroundTransition":"default","autoSlide":0,"viewDistance":3,"parallaxBackgroundImage":"","parallaxBackgroundSize":"","parallaxBackgroundHorizontal":null,"parallaxBackgroundVertical":null};
+				let configuration = {"controls":true,"progress":true,"slideNumber":false,"history":false,"keyboard":true,"overview":true,"center":true,"touch":true,"loop":false,"rtl":false,"shuffle":false,"fragments":true,"embedded":false,"help":true,"showNotes":false,"autoSlideStoppable":true,"mouseWheel":false,"hideAddressBar":true,"previewLinks":false,"transition":"slide","transitionSpeed":"default","backgroundTransition":"default","autoSlide":0,"viewDistance":3,"parallaxBackgroundImage":"","parallaxBackgroundSize":"","parallaxBackgroundHorizontal":null,"parallaxBackgroundVertical":null};
 				configuration.dependencies = [
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
