@@ -135,7 +135,7 @@ Images (66% of average page weight)
 
 :::slide
 ## Percived vs real performance
- ![](C:\Users\bedussif\Downloads\visual-progress1.png) 
+ ![](C:\repository\css-day-2017\media\visual-progress1.png) 
 :::
 
 :::slide
@@ -256,6 +256,8 @@ by Carmine Alfano
 
 ::::slide
 # that's all folks
+ ![](C:\repository\css-day-2017\media\kitty.jpg){centeredImg}
+
 Francesco Bedussi
 
 francesco.bedussi@ynap.com
